@@ -50,10 +50,10 @@ void ackermannDrive(Motor& right, Motor& left, int thr, int rud, Servo& steering
   }
   
   int steering_angle = map(rud, -90, 90, 120, 50);
-  if (abs(rud) <= 3) {
+  if (abs(rud) <= 5) {
     steering_angle = 85;
   }
 
   steering.write(steering_angle);
-  Serial.println((String)"deg: " + steering_angle + "\teffective: " + (steering_angle + 5));
+  Serial.println((String)"degs: " + steering_angle + "\teffective: " + (steering_angle + 5));
 }

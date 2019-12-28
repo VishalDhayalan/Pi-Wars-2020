@@ -4,9 +4,6 @@
 #include <MotorESP32.h>
 #include "remoteControl.h"
 
-// const char* ssid = "VM3246039";
-// const char* password = "ws5BwvyyQ4jh";
-
 String rec;                     // String to store response
 
 Channel rudder = Channel(32, 20000);
